@@ -13,14 +13,12 @@ const POSTHOG = {
   // KnowTheNext tvOS Dev. A project key can only send events, never read
   // them, so it is safe in a public page.
   key: "phc_ym2S8ZKY6qSiabdM8tYdyUxHdcZDgxtaQAAkwzjzhSus",
-  // The "Support feedback" survey (presentation: API) in that project, and
-  // the ids of its two open-text questions. Copy them from the survey page.
-  // Until they are filled in, reports still arrive as "survey sent" events
-  // (see Activity), just not under a survey.
-  surveyId: "TODO-survey-id",
+  // The support feedback survey in that project, and the ids of its two
+  // open-text questions (first: what happened, second: email).
+  surveyId: "01a1d1f1-5c64-0000-9c9e-d64240e30cb4",
   questions: {
-    whatHappened: "TODO-question-id-what-happened",
-    email: "TODO-question-id-email",
+    whatHappened: "e304febc-b8d5-4be5-ac62-d071e791b3c4",
+    email: "bf5240ad-9d88-4151-bae9-a772e4daf57f",
   },
 };
 
