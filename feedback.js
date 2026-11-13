@@ -6,19 +6,18 @@
 // visitor presses Send, so the page needs no cookie banner (ADR 2 in the app
 // repo).
 //
-// Every PostHog setting lives here and only here. Issue #51 switches it from
-// the dev project to the production one.
+// Every PostHog setting lives here and only here.
 const POSTHOG = {
   host: "https://eu.i.posthog.com",
-  // KnowTheNext tvOS Dev. A project key can only send events, never read
-  // them, so it is safe in a public page.
-  key: "phc_ym2S8ZKY6qSiabdM8tYdyUxHdcZDgxtaQAAkwzjzhSus",
-  // The support feedback survey in that project, and the ids of its two
+  // KnowTheNext, the production project (349073). A project key can only
+  // send events, never read them, so it is safe in a public page.
+  key: "phc_vbqqHyhB4NFay6ajycxyJcPQtLriCtNrgudNDfMc6nXK",
+  // The "Support feedback" survey in that project, and the ids of its two
   // open-text questions (first: what happened, second: email).
-  surveyId: "01a1d1f1-5c64-0000-9c9e-d64240e30cb4",
+  surveyId: "01a1d6b0-980b-0000-122a-954e1c3b1c51",
   questions: {
-    whatHappened: "e304febc-b8d5-4be5-ac62-d071e791b3c4",
-    email: "bf5240ad-9d88-4151-bae9-a772e4daf57f",
+    whatHappened: "854bb7f2-a9b0-4907-84d6-2d99e750a25f",
+    email: "590f7675-b14a-4535-8b5a-a86a04633634",
   },
 };
 
