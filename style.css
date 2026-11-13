@@ -63,3 +63,20 @@ footer {
   color: var(--muted);
   font-size: 0.9rem;
 }
+.feedback { margin: 0 0 1rem; }
+.feedback label { display: block; font-weight: 600; margin: 0 0 0.35rem; }
+.feedback textarea, .feedback input {
+  display: block;
+  width: 100%;
+  margin: 0 0 1rem;
+  padding: 0.6rem 0.7rem;
+  border: 1px solid var(--rule);
+  border-radius: 0.5rem;
+  background: var(--bg);
+  color: var(--text);
+  font: inherit;
+}
+.feedback textarea { resize: vertical; }
+.feedback button { border: 0; font: inherit; font-weight: 600; cursor: pointer; }
+.feedback button:disabled { opacity: 0.6; cursor: default; }
+.feedback #feedback-status { margin-top: 0.75rem; }

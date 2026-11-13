@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>KnowTheNext Support</title>
-<meta name="description" content="Support for KnowTheNext, a free geography quiz for Apple TV.">
+<meta name="description" content="Support for KnowTheNext, a geography quiz for Apple TV.">
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
 <nav><a href="/about/" aria-current="page">About</a><a href="/privacy/">Privacy</a></nav>
 
 <h1>KnowTheNext</h1>
-<p class="lede">A free geography quiz for Apple TV.</p>
+<p class="lede">A geography quiz for Apple TV. Free to start, with one purchase for everything else.</p>
 
 <h2>What it is</h2>
 <p>KnowTheNext shows you a country and asks you to name it. You might see its flag, its place on a map (with a magnifier for the smallest countries), its outline, its name or its capital, or hear its name read aloud. You answer by picking the right name, capital, flag or outline.</p>
@@ -21,17 +21,30 @@
   <li>Make your own groups of countries.</li>
   <li>Country names in 130+ languages.</li>
   <li>Best scores to beat.</li>
-  <li>No ads, no tracking, no accounts.</li>
 </ul>
 
+<h2>Free to start</h2>
+<p>The app is a free download. The Starter group, twelve well-known countries from every continent, is free to play with every clue, answer mode, difficulty and language.</p>
+<p>One in-app purchase, the Unlock, opens every other group (all 250 countries and territories) and lets you make your own groups. You pay once; there are no subscriptions and no ads. With Family Sharing, everyone in your family gets it too. Bought it before, or on a new Apple TV? Use Restore Purchases in the app.</p>
+
 <h2>Get help</h2>
-<p>Found a bug, a wrong flag or name, or have an idea? Open an issue on GitHub. You can also browse existing issues to see if someone has already asked.</p>
-<p><a class="button" href="https://github.com/KnowTheNext/knowthenext.github.io/issues">Open GitHub issues</a></p>
-<p class="meta">It helps to say which Apple TV model and tvOS version you use, and what you did before the problem happened.</p>
+<p>Found a bug, a wrong flag or name, or have an idea? Tell us here. You don't need an account.</p>
+<form id="feedback" class="feedback">
+  <label for="what-happened">What happened?</label>
+  <textarea id="what-happened" name="what-happened" rows="6" maxlength="5000" required placeholder="What you did, what you expected, and what happened instead"></textarea>
+  <label for="email">Email for a reply <span class="meta">(optional)</span></label>
+  <input id="email" name="email" type="email" autocomplete="email" maxlength="200">
+  <p id="feedback-versions" class="meta"></p>
+  <button type="submit" class="button">Send</button>
+  <p id="feedback-status" class="meta" role="status" aria-live="polite"></p>
+</form>
+<p class="meta">Your report and, if you give one, your email address are stored with PostHog in the EU so we can read and answer them. Nothing else on this page is tracked, and no cookies are used.</p>
+<p>You can also email <a href="mailto:knowthenext@proton.me">knowthenext@proton.me</a>.</p>
 
 <footer>
   <p><a href="/privacy/">Privacy policy</a></p>
 </footer>
 </main>
+<script src="/feedback.js" defer></script>
 </body>
 </html>
